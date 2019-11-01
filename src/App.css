@@ -1,0 +1,157 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+
+/* VAR */
+:root {
+  --title-font: 'Roboto', sans-serif;
+}
+
+.App {
+background: linear-gradient(-45deg, #ff1493, #b300b3, #66ccff, #00cc99, #ffcc66, #ff6666, #ff80df);
+background-size: 400% 400%;
+animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+.titleContainer {
+  background-color: #ffffffbf;
+  position: relative;
+  top: 10px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.title {
+  font-family: var(--title-font);
+  font-weight: 900;
+  color: transparent;
+  font-size:100px;
+  background: url("./blocks.png");
+  background-position: 12% 4%;
+  -webkit-background-clip: text;
+  position:relative;
+  text-align:center;
+  letter-spacing: 2px;
+}
+.NavButtons {
+  position: relative;
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+.NavButtons button {
+  background-color: transparent;
+  border: 5px solid white;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 30px;
+  color: white;
+  margin: 0 5px;
+}
+.pink:hover {
+  background-color: pink;
+}
+.rainbow:hover {
+  background: linear-gradient(-45deg, #ff1493, #b300b3, #66ccff, #00cc99, #ffcc66, #ff6666, #ff80df);
+}
+.clear:hover {
+  background-color: black;
+}
+.newGrid:hover {
+  background-color: #ff6666;
+}
+/* Grid style */
+.gridContainer {
+  text-align: center;
+}
+.grid {
+  width: 600px;
+  height: 600px;
+  border: 2px solid white;
+  display: inline-block;
+  position: relative;
+  flex-wrap: wrap;
+  margin: 0 auto 20px 0;
+}
+.row {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+/* Cells stye */
+.cell {
+  border: 1px dashed white;
+  height: auto;
+  width: 100%;
+}
+/* Grid form */
+.NewGridForm {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #8f1c8780;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.NewGridFormWindow {
+  width: 300px;
+  height: 300px;
+  border: solid white 2px;
+  position: relative;
+  background-color: yellow;
+  background: url("./blocks.png");
+  background-position: 84% 99%;
+}
+.instruction {
+  background-color: white;
+  font-family: "Patrick Hand SC", cursive;
+  color: #5a5050;
+}
+.NewGridFormWindow button {
+  position: relative;
+  top: 36px;
+  height: 34px;
+  width: 60px;
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 20px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border: 0;
+  padding: 0 6px;
+  background-color: #744fa0;
+  color: white;
+}
+.NewGridFormWindow button:hover {
+  background-color: #7d54a6;
+}
+.NewGridFormWindow input {
+  height: 30px;
+  width: 180px;
+  position: relative;
+  top: 35px;
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 18px;
+  text-align: center;
+  color: #744fa0;
+}
+.ValidationContainer {
+  color: #cf2222;
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 20px;
+  position: relative;
+  top: 15px;
+}
