@@ -19,7 +19,7 @@ This project was based on [this task](https://www.theodinproject.com/courses/web
 * React.js (own React configuration)
 
 ## Screenshots
-![Example screenshot](.sketch_screenshot.jpg)
+![Example screenshot](./sketch_screenshot.jpg)
 
 ## Features
 List of features ready:
